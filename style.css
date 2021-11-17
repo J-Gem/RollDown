@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+}
+
+nav{
+    font-size: 1.0em;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-decoration-line: none !important;
+    padding: 10px 25px;
+    align-items: center;
+
+    position:fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border-bottom: 2px solid black;
+}
+
+nav>a{
+    background-color:transparent;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+nav>a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+nav>ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:transparent;
+}
+
+@media (max-width: 768px){
+    nav, nav ul {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+}
+
+
+@media (max-width: 768px){
+    h1,h2,h3,h4,h5{
+        font-size: 0.5em;
+    }
+}
+  
+
+
+/* Video Scalling */
+
+@media (min-width: 320px){
+    iframe{
+        max-width: 310px;
+        max-height: 170px;
+    }
+}
+
+@media (min-width: 480px){
+    iframe{
+        max-width: 450px;
+        max-height: 230px;
+    }
+}
+
+@media (min-width: 768px){
+    iframe{
+        max-width: 700px;
+        max-height: 345px;
+    }
+}
+
+@media (min-width: 1024px){
+    iframe{
+        max-width: 990px;
+        max-height: 465px;
+    }
+}
+
+@media (min-width: 1200px){
+    iframe{
+        max-width: 1150px;
+        max-height: 560px;
+    }
+}
+
+
+
+
+nav>li:hover{
+    border-bottom: 2px solid black;
+    padding: 3px, 0.2em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: left;
+    padding-left:20%;
+    font-size: 1.5em;
+    margin: 2rem 0px;
+}
+
+p{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    max-width: 60%;
+    text-align: left;
+    padding:0em 20%;
+}
+
+.SozialmediaImage{
+    width: 3rem;
+    
+}
+
+.SozialmediaButton{
+    padding: 1rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 6px;
+    border:2px solid black;
+}
+
+.SozialmediaButton:hover{
+    border:3px solid rgb(22, 22, 22);
+}
+
+@media (max-width: 768px){
+    .SozialmediaImage{
+        width: 1.5rem;
+    }
+}
+
+#SozialMediaTap{
+ display: flex;
+ flex:auto;
+ justify-content: center;
+}
+
+#MainImage{
+    width: 100%; 
+    margin-bottom: 5rem;
+    /* margin-top: 4.5rem; */
+}
+
+@media (max-width:768px){
+    #MainImage{
+        margin-top: 150px;
+    }
+}
+
+#RoadmapImgFrame{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#RoadmapImg{
+    width: 60%;
+    margin: auto;
+}
+
+#MainImageFrame{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#video{
+    text-align: center;
+    margin: 2rem 2rem;
+}
+
+#featureImg{
+ text-align: center; 
+}
+
+.featureImages{
+    max-width: 390px;
+}
+
+@media (max-width: 768px){
+    .featureImages{
+        max-width: 250px;
+    }
+}
+
+.flex-container{
+    display: flex;
+    max-width:60%;
+    justify-content:center;
+    margin: auto;
+    flex-direction: row;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+@media (max-width: 1200px){
+    .flex-container{
+        flex-direction: column;
+        max-width: 90%;
+        align-items: center;
+    }
+}
+
+.flex-left{
+    width:50%;
+    height: 100%;
+    background-color: black;
+}
+
+@media(min-width: 320px){
+    .flex-left{
+        width:50% ;
+    }
+}
+
+@media(min-width: 768px){
+    .flex-left{
+        width:100% ;
+    }
+}
+
+@media(min-width: 768px){
+    .flex-left{
+        width:100% ;
+    }
+}
+
+@media(min-width: 1580px){
+    .flex-left{
+        width:50% ;
+    }
+}
+
+
+.flex-right{
+    width: 50%;
+}
+
+@media(max-width: 768px){
+    .flex-right{
+        width:100% ;
+    }
+}
+
+#gamemodes,#carrier{
+    margin: 80px 0px;
+    list-style-type:circle;
+}
+
+#gamemodes>li,#carrier>li{
+    display: block;
+    margin: 10px 5px;
+}
+
+#gamemodeImg,#carrierImg{
+    max-width: 100%;
+}
+
+
+table{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+}
+
+td{
+    height: 50px;
+}
+
+.TableHead{
+    background-color: red;
+}
+
+.TableBody{
+    background-color: rgba(71, 71, 71, 0.397);
+}
+
+.FirstRow,.LastRow{
+    text-align: center;
+}
+
+td>a{
+    color: red;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+footer{
+    text-align: center;
+    color: gray;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+

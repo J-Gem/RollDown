@@ -1,0 +1,108 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#container{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    max-width: 60%;
+
+    border: 4px solid black;
+    border-radius: 30px;
+}
+
+@media(max-width: 768px){
+    #container{
+        flex-direction: column;
+        margin-top:100px;
+    }
+}
+
+#left{
+    background-color: transparent;
+    /*border: 2px solid black;*/
+    width: 50%;
+    height: 500px;
+}
+@media(max-width:768px){
+    #left{
+        width:100% ;
+        height: 100px;
+    }
+}
+
+#right{
+    background-color:transparent;
+    /*border: 2px solid black;*/
+    width: 50%;
+    height: 500px;
+}
+@media(max-width:768px){
+    #right {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+button{
+    margin: 150px 30px;
+    border-radius: 6px;
+    border: 3px solid black;
+}
+@media(max-width: 768px){
+    button{
+        margin:30px;
+    }
+}
+
+
+#buttonleft{
+    background-color: lawngreen ;
+}
+
+#buttonleft:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+
+#buttonright{
+    background-color: #da2c49;
+}
+
+#buttonright:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.buttonImg{
+    width: 100%;
+}
+
+
+
+
+#ReturnButton{
+    display: flex;
+    margin: auto;
+    transform: translateY(50px);
+}
+
+#ReturnButton:hover{
+    background-color: black;
+    transition: 0.25s;
+}
+
+#ReturnButton>a{
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: black;
+
+    padding: 20px 50px;
+}
+
+#ReturnButton>a:hover{
+    color: white;
+    transition: 0.25s;
+}
